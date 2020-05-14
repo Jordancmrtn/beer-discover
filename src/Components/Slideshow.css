@@ -1,0 +1,39 @@
+.slide-container {
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  z-index: 20;
+}
+h3 {
+  text-align: center; 
+}
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 500px;
+  width: 65%;
+}
+.each-fade {
+  display: flex;
+}
+.each-fade .image-container {
+  width: 15%;
+  overflow: hidden;
+}
+.each-fade .image-container img {
+  width: 10%;
+  height: auto;
+}
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+.react-slideshow-wrapper.slide{
+  margin-left: 22%;
+}
