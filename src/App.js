@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{backgroundImage : `url(${require('./Assets/bar3.png')})`}}>
         <CtxBeers.Provider value={beers}>
           <Switch>
             <Route exact path="/" component={BeerList} />

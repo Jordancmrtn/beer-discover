@@ -30,11 +30,15 @@ const Slideshow = () => {
 
   slideImages.splice(0, 0,pushArray)
 
+  function test(){
+    console.log("hello")
+  }
+
     return (
       <div className="slide-container">
         <Slide {...properties}>
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[0][1]})`}}></div>
+            <div onClick={test()} style={{'backgroundImage': `url(${slideImages[0][1]})`, cursor: "pointer"}}></div>
           </div>
           <div className="each-slide">
             <div  style={{'backgroundImage': `url(${slideImages[0][3]})`}}></div>

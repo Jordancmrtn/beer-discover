@@ -4,8 +4,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 16%;
-  z-index: 20;
+  margin-top: 0%;
+  z-index: 2;
+}
+#logoFestival{
+  height: auto;
+  width: 360px;
+  display: none;
 }
 .beerListName{
   display: none;
@@ -16,7 +21,6 @@
   z-index: 20;
 }
 .beerList a img{
-  margin-bottom: 90px;
   height: auto;
   width: 94px;
 }
@@ -31,11 +35,7 @@
   display: block;
   position: absolute;
   top: 0;
-}
-.imgMobile{
-  z-index: 0;
-  display: block;
-  position: inherit;
+  height: 100%;
 }
 .slider2{
   display: flex;
@@ -45,6 +45,7 @@
 
 
 @media screen and (min-width: 376px) {
+
   .slider2{
     display: none;
   }
@@ -58,11 +59,15 @@
     font-size: 320%;
   }
   .beerList{
-    flex-direction: row;
-    align-items: flex-end;
-    margin-top: 2%;
-    position: absolute;
     display:flex;
+    flex-direction: row;
+    margin-top: 170px;
+    align-items: flex-end;
+  }
+  #logoFestival{
+    display: block;
+    position: relative;
+    bottom: 92px;
   }
   .beerListName{
     display: none;
@@ -71,7 +76,6 @@
     position: absolute;
   }
   .beerList a img{
-    margin-bottom: 0px;
     height: auto;
     width: 43px;
   }
